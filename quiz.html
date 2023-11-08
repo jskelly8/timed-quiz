@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!-- Quiz questions and choices page -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/quiz.css" />
+    <title>Quiz</title>
 </head>
-<body>
+
+<body id="quiz">
     
+    <!-- Top bar displaying highscore link with working timer -->
+    <div class="top-bar">
+        <a class="button" href="./highscores.html">View Highscores</a>
+        <p class="timer">Timer: 0</p>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container flex-center">
+        <div class="flex-center flex-column">
+            <h2 id="question">This is the first question</h2>
+            <p>Select the multiple choice option below.</p>
+            <ul>
+                <li><button class="button">Option 1</button></li>
+                <li><button class="button">Option 2</button></li>
+                <li><button class="button">Option 3</button></li>
+                <li><button class="button">Option 4</button></li>
+            </ul>
+        </div>
+    </main>
+
+    <!-- JavaScript page link -->
+    <script src="./assets/js/quiz.js"></script>
+
 </body>
 </html>
