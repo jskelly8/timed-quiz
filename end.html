@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
+    <!-- End page of quiz -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <title>Document</title>
 </head>
-<body>
+
+<body id="end">
+
+    <!-- Top bar displaying highscore link & empty timer -->
+    <div class="top-bar">
+        <a class="button" href="./highscores.html">View Highscores</a>
+        <p class="timer">Timer: 0</p>
+    </div>
+
+    <!-- Main Content -->
+    <section class="container flex-center">
+        <div class="flex-center flex-column">
+            <h1>Awesome!</h1>
+            <h2>Your final score: <!--enter score js--></h2>
+            <form>
+                <label for="name">Your Initials:</label>
+                <input id="name" type="text" placeholder="JS" />
+            </form>
+            <button type="submit" class="button">Save</button>
+        </div>
+    </section>  
     
+    <!-- JavaScript page link -->
+    <script src="./assets/js/end.js"></script>
+
 </body>
 </html>
