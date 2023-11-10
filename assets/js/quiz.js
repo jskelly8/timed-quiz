@@ -1,10 +1,7 @@
-var questionTitle = document.getElementById("question");
-var quizChoices = document.querySelector(".quizChoices");
+// Variables for later use
 var currentQuestion = 0;
 var time = 100;
-var clock = document.querySelector(".timer");
 var timer;
-
 var questionIndex = [
     {
         question: "test question 1",
@@ -58,6 +55,11 @@ var questionIndex = [
     }
 ];
 
+// DOM Elements
+var questionTitle = document.getElementById("question");
+var quizChoices = document.querySelector(".quizChoices");
+var clock = document.querySelector(".timer");
+
 // Timer start, decreasing by one naturally per second
 timer = setInterval(startClock, 1000); 
 
@@ -101,7 +103,8 @@ function checkAnswer(event) {
 
 // Funtion that will end the quiz game and bring the user to the "end" screen, ready to enter initials to save highscore
 function endGame() {
-    //------ clearInterval(timer);
+    localStorage.setItem("score", time);
+    clearInterval(timer);
     return window.location.assign('./end.html');
 };
 
