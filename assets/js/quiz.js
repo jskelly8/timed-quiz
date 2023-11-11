@@ -88,9 +88,8 @@ function showQuestion() {
 // Funtion that checks if the answer chosen was correct, if it was it will load the next question, if it was not, timer will lose 15 seconds
 function checkAnswer(event) {
     console.log(event.target.value);
-    if (event.target.value === questionIndex[0].answer) {
+    if (event.target.value === questionIndex[currentQuestion].answer) {
         currentQuestion++;
-        showQuestion();
     } else {
         time=time-15;
     };
