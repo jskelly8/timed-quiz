@@ -7,7 +7,7 @@ This project was to create a basic quiz on JavaScript fundamentals that is timed
 
 ## Usage
 
-URL of deployed quiz website: 
+URL of deployed quiz website: https://jskelly8.github.io/timed-quiz/
 
 Screenshot of completed site homepage:
  ![Picture of the coding quiz webiste homepage](./assets/images/timedQuizClip.png)
