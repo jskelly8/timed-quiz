@@ -4,54 +4,54 @@ var time = 100;
 var timer;
 var questionIndex = [
     {
-        question: "test question 1",
+        question: "What is NOT a 'primitive' data type in JavaScript?",
         choices: [
-            "choice 1",
-            "choice 2",
-            "choice 3",
-            "choice 4",
+            "String",
+            "Function",
+            "Boolean",
+            "Null",
         ],
-        answer: "choice 1",
+        answer: "Function",
     },
     {
-        question: "test question 2",
+        question: "How do you write a single-line comment in JavaScript?",
         choices: [
-            "choice 1",
-            "choice 2",
-            "choice 3",
-            "choice 4",
+            "/* comment */",
+            "!-- comment --",
+            "// comment",
+            "# comment",
         ],
-        answer: "choice 1",
+        answer: "// comment",
     },
     {
-        question: "test question 3",
+        question: "What is the purpose of the 'for' loop in JavaScript?",
         choices: [
-            "choice 1",
-            "choice 2",
-            "choice 3",
-            "choice 4",
+            "To declare a variable",
+            "To create a function",
+            "To iterate over a sequence of values",
+            "To define a class",
         ],
-        answer: "choice 1",
+        answer: "To iterate over a sequence of values",
     },
     {
-        question: "test question 4",
+        question: "What does the 'DOM' stand for in JavaScript?",
         choices: [
-            "choice 1",
-            "choice 2",
-            "choice 3",
-            "choice 4",
+            "Document Object Model",
+            "Data Object Model",
+            "Dom Toretto",
+            "Dynamic Object Mechanism",
         ],
-        answer: "choice 1",
+        answer: "Document Object Model",
     },
     {
-        question: "test question 5",
+        question: "What is the purpose of the 'if' statement in JavaScript?",
         choices: [
-            "choice 1",
-            "choice 2",
-            "choice 3",
-            "choice 4",
+            "To declare a variable",
+            "To loop through an array",
+            "To execute code conditionally",
+            "To define a function",
         ],
-        answer: "choice 1",
+        answer: "To execute code conditionally",
     }
 ];
 
@@ -90,6 +90,7 @@ function checkAnswer(event) {
     console.log(event.target.value);
     if (event.target.value === questionIndex[0].answer) {
         currentQuestion++;
+        showQuestion();
     } else {
         time=time-15;
     };

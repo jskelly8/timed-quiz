@@ -3,33 +3,17 @@
 ## Description
 Challenge 4 -- Web APIs Timed Quiz
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
-
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+This project was to create a basic quiz on JavaScript fundamentals that is timed and logs highscores, of which are saved in local storage. The design is reponsive with contrasting colors so that it will be able to be played on any device for accessibility. Throughout this project I learned much more about JavaScript in general, using rem in css, and specifically with client-side/local storage, inserting HTML from js, querySelectors vs getElementById, eventListeners, and timers/setInterval.
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+URL of deployed quiz website: 
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
+Screenshot of completed site homepage:
+ ![Picture of the coding quiz webiste homepage](./assets/images/timedQuizClip.png)
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
 
 ## Credits
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
-
 README template used from: https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide edX Boot Camps LLC. (2022, October 27). Professional readme guide. Professional README Guide | The Full-Stack Blog. https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide
 
-## Features
-
-If your project has a lot of features, list them here.
+Help on begining the JS code with questions showing including correct answer in variable array & the startings of the timer and end funtions from Boot Camp Tutor Team: Matthew Calimbas, see his work by visiting: https://github.com/MattyCalimbas
