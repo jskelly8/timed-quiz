@@ -72,6 +72,23 @@ form input {
     margin-bottom: 2rem;
 }
 
+/* List styling for both the quiz page and highscores page */
+ul {
+    padding: 1rem;
+    display: flex;
+}
+
+#scores {
+    flex-direction: column;
+}
+
+li {
+    list-style: none;
+    padding: 1rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
 
 /* Reusable constants */
 .flex-center {

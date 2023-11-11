@@ -11,16 +11,22 @@ var highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 savedScore.textContent = score;
 
 function saveScore(event) {
-    
-    var userScore = {
-        score: score,
-        name: usernameForm.value
-    };
-    
-    highScores.push(userScore);
 
-    localStorage.setItem('highScores', JSON.stringify(highScores));
+    if (usernameForm.value.trim() === "") {
+        event.preventDefault();
+        alert("Please enter your initials before saving your score.");
+    } else {
+        var userScore = {
+            score: score,
+            name: usernameForm.value
+        };
 
+        highScores.push(userScore);
+
+        localStorage.setItem('highScores', JSON.stringify(highScores));
+
+        return window.location.assign('./highscores.html');
+    }
 };
 
 // Event Listener to "listen" for the Save button to be clicked so the score can be kept with their initials
