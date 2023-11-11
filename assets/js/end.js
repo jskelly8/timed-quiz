@@ -5,7 +5,7 @@ var usernameForm = document.querySelector("#username");
 
 // Local Storage Variables
 var score = localStorage.getItem('score');
-var highScores = JSON.parse(localStorage.getItem("highScores"));
+var highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
 // Funtion to pull the saved time score from the quiz.js and save it along with the users initials to be seen on the Highscores page
 savedScore.textContent = score;
